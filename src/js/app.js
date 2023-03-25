@@ -32,7 +32,8 @@ function render(variables = {}) {
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
-          <img src="${variables.avatarURL}" class="photo" />
+          <img src="${(variables.avatarURL =
+            "../../public/assets/img/me.jpg")}" class="photo" />
           <h1>${variables.name === null ? "" : variables.name} ${
     variables.lastname === null ? "" : variables.lastname
   }</h1>
