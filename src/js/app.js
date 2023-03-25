@@ -37,7 +37,7 @@ function render(variables = {}) {
     variables.lastname === null ? "" : variables.lastname
   }</h1>
           <h2>${variables.role}</h2>
-          <h3>Miami, USA</h3>
+          <h3>${variables.city}, ${variables.country}</h3>
           <ul class="position-right">
             <li><a href="${
               variables.twitter
