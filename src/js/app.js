@@ -36,7 +36,7 @@ function render(variables = {}) {
           <h1>${variables.name === null ? "" : variables.name} ${
     variables.lastname === null ? "" : variables.lastname
   }</h1>
-          <h2>Web Developer</h2>
+          <h2>${variables.role}</h2>
           <h3>Miami, USA</h3>
           <ul class="position-right">
             <li><a href="${
