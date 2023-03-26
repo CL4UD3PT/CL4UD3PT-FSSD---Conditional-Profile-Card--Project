@@ -35,24 +35,24 @@ function render(variables = {}) {
             ${cover}
           <img src="${(variables.avatarURL =
             "../../public/assets/img/me.jpg")}" class="photo" />
-          <h1>${variables.name === null ? "" : variables.name} ${
-    variables.lastname === null ? "" : variables.lastname
+          <h1>${variables.name === null ? "Cláudio" : variables.name} ${
+    variables.lastname === null ? "Pinho" : variables.lastname
   }</h1>
-          <h2>${variables.role}</h2>
-          <h3>${variables.city}, ${variables.country}</h3>
+          <h2>${
+            variables.role == null ? "Full-Stack Developer" : variables.role
+          }</h2>
+          <h3>${variables.city == null ? "Esmoriz" : variables.city}, ${
+    variables.country == null ? "Portugal" : variables.country
+  }</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="${
-              variables.twitter
-            }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="${
-              variables.github
-            }"><i class="fab fa-github"></i></a></li>
-            <li><a href="${
-              variables.linkedin
-            }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${
-              variables.instagram
-            }"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="${(variables.twitter =
+              "https://twitter.com/CL4UD3PT")}"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="${(variables.github =
+              "https://github.com/CL4UD3PT")}"><i class="fab fa-github"></i></a></li>
+            <li><a href="${(variables.linkedin =
+              "https://www.linkedin.com/in/cl4ud3pt/")}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="${(variables.instagram =
+              "https://instagram.com/claud3pt")}"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
